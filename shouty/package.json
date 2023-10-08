@@ -1,0 +1,23 @@
+{
+  "name": "cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/popoxta/cucumber.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/popoxta/cucumber/issues"
+  },
+  "homepage": "https://github.com/popoxta/cucumber#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.6.0"
+  }
+}
