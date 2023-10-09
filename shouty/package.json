@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/popoxta/cucumber#readme",
   "devDependencies": {
-    "@cucumber/cucumber": "^9.6.0"
+    "@cucumber/cucumber": "^9.6.0",
+    "hamjest": "^4.1.0"
   }
 }
