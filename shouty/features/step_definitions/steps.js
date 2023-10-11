@@ -1,5 +1,6 @@
 const { Given, When, Then } = require('@cucumber/cucumber')
 const {Person} = require("../../src/shouty");
+const {assertThat, is} = require("hamjest");
 
 // given set up
 Given('Lucy is located {int} metres from Sean', (distance) => {
@@ -10,8 +11,9 @@ Given('Lucy is located {int} metres from Sean', (distance) => {
 
 When('Sean shouts {string}', (message) => {
     this.sean.shout(message)
+    this.message = message
 })
 
 Then('Lucy hears Sean\'s message', () => {
-    return 'pending'
+    assertThat(this.lucy.messagesHeard(), is([this.message]))
 })
