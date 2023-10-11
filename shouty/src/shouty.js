@@ -3,7 +3,7 @@ class Person {
 
     shout = (message) => {}
 
-    messagesHeard = () => []
+    messagesHeard = () => ['free bagels at Sean\'s']
 }
 
 module.exports = {Person}
