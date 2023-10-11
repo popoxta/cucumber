@@ -1,14 +1,15 @@
 const { Given, When, Then } = require('@cucumber/cucumber')
 const {Person} = require("../../src/shouty");
 
+// given set up
 Given('Lucy is located {int} metres from Sean', (distance) => {
-    const lucy = new Person
-    const sean = new Person
-    lucy.moveTo(distance)
+    this.lucy = new Person
+    this.sean = new Person
+    this.lucy.moveTo(distance)
 })
 
-When('Sean shouts {string}', (string) => {
-    return 'pending'
+When('Sean shouts {string}', (message) => {
+    this.sean.shout(message)
 })
 
 Then('Lucy hears Sean\'s message', () => {

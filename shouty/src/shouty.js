@@ -1,7 +1,7 @@
 class Person {
-    moveTo = (distance) => {
+    moveTo = (distance) => {}
 
-    }
+    shout = (message) => {}
 }
 
 module.exports = {Person}
