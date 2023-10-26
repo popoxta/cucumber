@@ -1,4 +1,9 @@
 class Person {
+
+    constructor(name) {
+        this.name = name
+    }
+
     moveTo = (distance) => {}
 
     shout = (message) => {}

@@ -3,10 +3,10 @@ const {Person} = require("../../src/shouty");
 const {assertThat, is} = require("hamjest");
 
 // given set up
-Given('Lucy is located/standing {int} metre(s) from Sean', (distance) => {
-    this.lucy = new Person
-    this.sean = new Person
-    this.lucy.moveTo(distance)
+Given('{person} is located/standing {int} metre(s) from Sean', (person, distance) => {
+    this.person = person
+    this.sean = new Person('Sean')
+    this.person.moveTo(distance)
 })
 
 When('Sean shouts {string}', (message) => {
@@ -15,5 +15,5 @@ When('Sean shouts {string}', (message) => {
 })
 
 Then('Lucy hears Sean\'s message', () => {
-    assertThat(this.lucy.messagesHeard(), is([this.message]))
+    assertThat(this.person.messagesHeard(), is([this.message]))
 })
