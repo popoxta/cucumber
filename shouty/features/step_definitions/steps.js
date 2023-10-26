@@ -3,7 +3,7 @@ const {Person} = require("../../src/shouty");
 const {assertThat, is} = require("hamjest");
 
 // given set up
-Given('Lucy is located {int} metres from Sean', (distance) => {
+Given('Lucy is located {int} metre(s) from Sean', (distance) => {
     this.lucy = new Person
     this.sean = new Person
     this.lucy.moveTo(distance)
