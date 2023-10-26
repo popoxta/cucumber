@@ -1,14 +1,25 @@
 class Person {
 
-    constructor(name) {
+    constructor(name, network) {
         this.name = name
+        this.network = network ?? null
     }
 
-    moveTo = (distance) => {}
+    moveTo (distance) {}
 
-    shout = (message) => {}
+    shout (message) {}
 
-    messagesHeard = () => ['free bagels at Sean\'s']
+    messagesHeard () {
+        return ['free bagels at Sean\'s']
+    }
+
+    setNetwork (network) {
+        this.network = network
+    }
 }
 
-module.exports = {Person}
+class Network {
+
+}
+
+module.exports = {Person, Network}
